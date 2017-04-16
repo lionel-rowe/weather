@@ -19,13 +19,18 @@ $(document).ready(function() {
   
   //Function to load data from the API
   
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(getLatAndLon);
+  function getLatAndLon() {
+    alert(position.coords.latitude);
   }
   
-  function getLatAndLon() {
-    alert(position.coords.latitude + ', ' + position.coords.longitude)
+  function geoError() {
+    alert('Sorry, geolocation is not supported.')
   }
+  
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(getLatAndLon, geoError);
+  }
+
   
   //Function to refresh all data
   
