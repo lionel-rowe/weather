@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+
+<head>
+  <meta charset="utf-8">
+  <title>Today's Weather</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <p>You are in <span id="place">[place]</span>.</p>
+
+    <p>The weather is <span id="weather">[weather]</span>.</p>
+
+    <p>The temperature is <span id="temperature">[temperature]</span><span id="unit">[unit]</span>.</p>
+
+    <div id="unitSelector">
+      <p>Unit: <input type="radio" name="unit" value="celsius" checked="checked">Celsius
+      <input type="radio" name="unit" value="fahrenheit">Fahrenheit
+      <input type="radio" name="unit" value="kelvin">Kelvins</p>
+    </div>
+
+    <p>Here is a pretty weather icon: <span id="icon">[icon]</span></p>
+    
+</body>
