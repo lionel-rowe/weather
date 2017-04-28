@@ -6,21 +6,35 @@
   <link rel="stylesheet" href="styles.css">
   <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
   <script src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet"> 
+  
 </head>
 
 <body>
-  <p>You are in <span id="place">[place]</span>.</p>
+  
+  <div class="bigcontainer">
+    
+    <div id="dashboard">
 
-    <p>The weather is <span id="weather">[weather]</span>.</p>
+      <h1>Today&rsquo;s Weather</h1>
+      
+      <p><img src="icons/geoloc.svg" style="height: 1em" alt="Location" title="Location"> <span id="place"></span></p>
 
-    <p>The temperature is <span id="temperature">[temperature]</span><span id="unit">[unit]</span>.</p>
+      <div id="iconContainer"><span id="icon"></span></div>
+      
+      <p>Weather: <span id="weather"></span></p>
+      
+      <p>Temperature: <span id="temperature"></span><span id="unit"></span></p>
 
-    <div id="unitSelector">
-      <p>Unit: <input type="radio" name="unit" value="celsius" checked="checked">Celsius
-      <input type="radio" name="unit" value="fahrenheit">Fahrenheit
-      <input type="radio" name="unit" value="kelvin">Kelvins</p>
+      <div id="unitSelector">
+        <p>Unit: <input type="radio" name="unit" value="metric" checked="checked">Celsius
+        <input type="radio" name="unit" value="imperial">Fahrenheit
+        <input type="radio" name="unit" value="standard">Kelvins</p>
+      </div>
+
+
     </div>
-
-    <p>Here is a pretty weather icon: <span id="icon">[icon]</span></p>
+    
+  </div>
     
 </body>
