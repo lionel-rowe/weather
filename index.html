@@ -26,11 +26,11 @@
       
       <p>Temperature: <span id="temperature"></span><span id="unit"></span></p>
 
-      <div id="unitSelector">
-        <p>Unit: <input type="radio" name="unit" value="metric" checked="checked">Celsius
-        <input type="radio" name="unit" value="imperial">Fahrenheit
-        <input type="radio" name="unit" value="standard">Kelvins</p>
-      </div>
+      <form id="unitSelector">
+        <p>Unit: <input type="radio" name="unit" value="metric" id="metric" checked="checked"><label for="metric">Celsius</label>
+        <input type="radio" name="unit" value="imperial" id="imperial"><label for="imperial">Fahrenheit</label>
+        <input type="radio" name="unit" value="standard" id="standard"><label for="standard">Kelvins</label></p>
+      </form>
 
 
     </div>
