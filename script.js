@@ -42,7 +42,7 @@ $(document).ready(function() {
     $.ajax({
       dataType: 'json',
       cache: true, //change?
-      url: `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${selectedUnit}&appid=7c66f6e59a1ea4bb1554ef796beaa5c1`,
+      url: `https://zippy-thorn.glitch.me/http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${selectedUnit}&appid=7c66f6e59a1ea4bb1554ef796beaa5c1`,
 
       success: populate,
       error: function() {
